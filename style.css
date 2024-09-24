@@ -24,12 +24,12 @@ ol {
 
 .container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
 .container-small {
-    max-width: 800px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -115,6 +115,9 @@ ol {
 
 .align-ite {
     align-items: center;
+}
+.img{
+    max-width: 100%;
 }
 
 
@@ -209,6 +212,38 @@ ol {
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
+}
+.button_brand{
+    display: inline-block;
+    line-height: 40px;
+    border-radius: 999px;
+    padding: 0 17px;
+    font-size: 18px;
+    background-color: #255ee9 ;
+    color: white;
+}
+
+/* feature*/
+.feature{
+    padding: 128px 0 ;
+}
+.title_feature{
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+.feature_img{
+    display: block;
+    max-width: 100%;
+}
+
+/* cta download*/
+.cta_download{
+    text-align: center;
+}
+.title_feature .cta_download{
+    font-size: 40px;
+    margin-bottom: 24px;
+    padding-top: 15px;
 }
 
 /*footer*/
