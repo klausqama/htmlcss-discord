@@ -1,143 +1,238 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-   }
+}
 
-   html{
+html {
     font-family: "Open Sans", sans-serif;
-   }
-   
-   /*reset rules*/
-   
-   a{
-       color: currentColor;
-       text-decoration: none;
-   }
-   ul,ol{
-       list-style: none;
-   }
-   
-   /* layout*/
-   
-   .container{
-       max-width: 900px;
-       margin: 0 auto;
-   }
-   .container-small{
-       max-width: 600px ;
-       margin: 0 auto;
-   }
-   .row{
-       display: flex;
-       flex-wrap: wrap;
-   }
-   .col-100{
-       width: 100%;
-   }
-   .col-40{
-       width: 40%;
-   }
-   .col-60{
-       width: 60%;
-   }
-   .col-13{
-       width: calc(100%/3);
-   }
-   .col-16{
-       width: calc(100%/6);
-   }
-   
-   /*debug*/
-   
-   .debug .navbar > *{
-       background-color: orange;
-       border: 2px dashed black;
-       padding: 8px;
-   }
-   .debug.hero {
-       background-color: blue ;
-       color: white;
-       padding: 50px 0;
-   
-   }
-   .debug.hero .row >* {
-       background-color: violet;
-       border: 2px dashed black;
-       min-height: 400px;
-   }
-   .debug.feature .row >* { 
-       border: 2px dashed black;
-       min-height: 400px;
-   }
-   .debug.feature {
-       padding: 50px 0;
-   }
-   .debug.feature .col-40{
-       background-color: pink;
-       color: white;
-   }
-   .debug.feature .col-60{
-       background-color: rgb(110, 110, 232);
-       color: white;
-   }
-   .debug.green-section .row> * {
-       background-color: green;
-       color: white;
-       min-height: 600px;
-   }
-   /*utilities*/
-   .bg-gray{
-       background-color: rgb(172, 160, 160);
-   }
-   .justify-con{
-       justify-content: space-between;
-   }
-   .align-ite{
-       align-items: center;
-   }
-   
-   
-   
-   /*header*/
-   .navbar{
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-   }
-   .main-header{
-       background-color: #255ee9;
-       color: white;
-       padding: 30px 0;
-   }
-   .navbar .menu{
-       display: flex;
-       gap: 16px;
-       align-items: center;
-   }
-   .log img{
+}
+
+/*reset rules*/
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* layout*/
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container-small {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.col-13 {
+    width: calc(100%/3);
+}
+
+.col-16 {
+    width: calc(100%/6);
+}
+
+/*debug*/
+
+.debug .navbar>* {
+    background-color: orange;
+    border: 2px dashed black;
+    padding: 8px;
+}
+
+.debug.hero {
+    background-color: blue;
+    color: white;
+    padding: 50px 0;
+
+}
+
+.debug.hero .row>* {
+    background-color: violet;
+    border: 2px dashed black;
+    min-height: 400px;
+}
+
+.debug.feature .row>* {
+    border: 2px dashed black;
+    min-height: 400px;
+}
+
+.debug.feature {
+    padding: 50px 0;
+}
+
+.debug.feature .col-40 {
+    background-color: pink;
+    color: white;
+}
+
+.debug.feature .col-60 {
+    background-color: rgb(110, 110, 232);
+    color: white;
+}
+
+.debug.green-section .row>* {
+    background-color: green;
+    color: white;
+    min-height: 600px;
+}
+
+/*utilities*/
+.bg-gray {
+    background-color: rgb(172, 160, 160);
+}
+
+.justify-con {
+    justify-content: space-between;
+}
+
+.align-ite {
+    align-items: center;
+}
+
+
+
+/*header*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header {
+    background-color: #255ee9;
+    color: white;
+    padding: 30px 0;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.log img {
     height: 30px;
     display: block;
-   }
-   
-   /*footer*/
-    .footer-section{
-       background-color: rgb(50, 49, 49);
-       color: white;
-    }
-   .footer-section .debug .row > .col-16{
-       border: 2px dashed white;
-       color: white;
-       background-color: lightseagreen;
-   }
-   .footer-section .debug .row > .col-13{
-       border: 2px dashed black;
-       color: white;
-       background-color: salmon;
-   }
-   .footer-section .debug .row > *{
-       min-height: 300px;
-   }
-   .footer-section .debug{
-       padding: 30px 0;
-   }
+}
+
+.menu {
+    font-size: 14px;
+}
+
+.menu_item a {
+    padding: 12px 16px;
+}
+
+/*hero*/
+.hero {
+    background-image: url(./img/img.discord/jumbo.png);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.hero .row {
+    justify-content: center;
+}
+
+.hero .row {
+    min-height: 450px;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.hero .col-100 {
+    max-width: 720px;
+    margin: 0 auto;
+    min-height: 600px;
+}
+
+.hero__h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero__p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+/*component*/
+
+.button{
+    display: inline-block;
+    line-height: 40px;
+    border-radius: 999px;
+    padding: 0 17px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+}
+.button.button_dark{
+    background-color: black;
+    color: white;
+}
+.button.button_sm{
+    line-height: 30px;
+    font-size: 14px;
+}
+.hero_button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/*footer*/
+.footer-section {
+    background-color: rgb(50, 49, 49);
+    color: white;
+}
+
+.footer-section .debug .row>.col-16 {
+    border: 2px dashed white;
+    color: white;
+    background-color: lightseagreen;
+}
+
+.footer-section .debug .row>.col-13 {
+    border: 2px dashed black;
+    color: white;
+    background-color: salmon;
+}
+
+.footer-section .debug .row>* {
+    min-height: 300px;
+}
+
+.footer-section .debug {
+    padding: 30px 0;
+}
