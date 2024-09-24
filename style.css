@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   }
+   
+   /*reset rules*/
+   
+   a{
+       color: currentColor;
+       text-decoration: none;
+   }
+   ul,ol{
+       list-style: none;
+   }
+   
+   /* layout*/
+   
+   .container{
+       max-width: 900px;
+       margin: 0 auto;
+   }
+   .container-small{
+       max-width: 600px ;
+       margin: 0 auto;
+   }
+   .row{
+       display: flex;
+       flex-wrap: wrap;
+   }
+   .col-100{
+       width: 100%;
+   }
+   .col-40{
+       width: 40%;
+   }
+   .col-60{
+       width: 60%;
+   }
+   .col-13{
+       width: calc(100%/3);
+   }
+   .col-16{
+       width: calc(100%/6);
+   }
+   
+   /*debug*/
+   
+   .debug .navbar > *{
+       background-color: orange;
+       border: 2px dashed black;
+       padding: 8px;
+   }
+   .debug.hero {
+       background-color: blue ;
+       color: white;
+       padding: 50px 0;
+   
+   }
+   .debug.hero .row >* {
+       background-color: violet;
+       border: 2px dashed black;
+       min-height: 400px;
+   }
+   .debug.feature .row >* { 
+       border: 2px dashed black;
+       min-height: 400px;
+   }
+   .debug.feature {
+       padding: 50px 0;
+   }
+   .debug.feature .col-40{
+       background-color: pink;
+       color: white;
+   }
+   .debug.feature .col-60{
+       background-color: rgb(110, 110, 232);
+       color: white;
+   }
+   .debug.green-section .row> * {
+       background-color: green;
+       color: white;
+       min-height: 600px;
+   }
+   /*utilities*/
+   .bg-gray{
+       background-color: rgb(172, 160, 160);
+   }
+   .justify-con{
+       justify-content: space-between;
+   }
+   .align-ite{
+       align-items: center;
+   }
+   
+   
+   
+   /*header*/
+   .navbar{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   .main-header{
+       background-color: rgb(32, 233, 243);
+       padding: 30px 0;
+   }
+   .navbar .menu{
+       display: flex;
+       gap: 16px;
+       align-items: center;
+   }
+   
+   /*footer*/
+    .footer-section{
+       background-color: rgb(50, 49, 49);
+       color: white;
+    }
+   .footer-section .debug .row > .col-16{
+       border: 2px dashed white;
+       color: white;
+       background-color: lightseagreen;
+   }
+   .footer-section .debug .row > .col-13{
+       border: 2px dashed black;
+       color: white;
+       background-color: salmon;
+   }
+   .footer-section .debug .row > *{
+       min-height: 300px;
+   }
+   .footer-section .debug{
+       padding: 30px 0;
+   }
